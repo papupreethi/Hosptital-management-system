@@ -7,16 +7,9 @@ from django.contrib.auth import authenticate, logout
 
 
 # Create your views here.
-def index1(request):
-    return render(request, 'index1.html')
-
 
 def about(request):
     return render(request, 'about.html')
-
-
-def login(request):
-  return render(request, 'login.html')
 
 
 def index1(request):
@@ -161,15 +154,5 @@ def Logout_admin(request):
             logout(request)
             return redirect('adminlogin')
 
-def reg_done(request):
-            name = request.POST.get('name')
-            mail = request.POST.get('mail')
-            phone = request.POST.get('phone')
-            psw = request.POST.get('psw')
-            rpsw = request.POST.get('rpsw')
-            all = [name, mail, phone, psw, rpsw]
-            messages.success(request, 'Profile details updated.')
-            return render(request, 'reg_done.html', {'all': all})
 
 
-#Create your views here.
