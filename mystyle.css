@@ -1,0 +1,24 @@
+.nav-link{
+color:white !important;
+}
+
+body{
+background-color:blue;
+}
+
+.nav-link:hover{
+color:yellow !important;
+background-color:lightblue;
+border-radius:10px;
+}
+
+rounded{
+border_top:8px solid lightblue;
+border_radius:5px;
+
+
+}
+
+navbar-brand:hover{
+color:yellow !important;
+font-weight:bold;
