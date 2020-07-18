@@ -20,13 +20,13 @@ from .views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
-    path('about/', views.about),
-    path('login/', views.login),
+    path('', index1, name='home'),
+    path('about/', About,name='about'),
+    
     path('index1/', index1,name='index1'),
     path('admin_login/', admin_login,name='admin_login'),
     path('logout/', Logout_admin,name='logout'),
-     path('reg_done/', views.reg_done),
+   
     path('view_doctor/', view_doctor, name='view_doctor'),
     path('add_doctor/', add_doctor, name='add_doctor'),
     path('delete_doctor(?P<int:pid>)', delete_doctor, name='delete_doctor'),
